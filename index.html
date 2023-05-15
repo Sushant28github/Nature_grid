@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> : : Portfolio : :</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="../favicon_io/favicon-32x32.png" type="image/x-icon">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            justify-content: space-evenly;
+            align-items: center;
+            min-height: 100vh;
+            display: flex;
+            /* background: linear-gradient(to top right  ,rgb(94, 80, 80) , rgb(21, 88, 21)); */
+            background-image: url(https://images.unsplash.com/photo-1679199685253-5041e82a4600?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDN8NnNNVmpUTFNrZVF8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .text {
+            flex-basis: 30%;
+            font-size: 1.2rem;
+            font-family: serif;
+        }
+
+        h1 {
+            padding-bottom: 20px;
+            text-align: center;
+            color: rgba(243, 243, 104, 0.607);
+            text-shadow: 2px 2px 10px rgb(0, 0, 0);
+        }
+
+        p {
+            text-align: center;
+            color: rgb(255, 255, 255);
+            padding: 20px;
+        }
+
+        .gallery {
+            flex-basis: 50%;
+            display: grid;
+            gap: 2px;
+            grid-template-columns: repeat(3, 1fr);
+            min-height: 70vh;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(255, 255, 255);
+            border: 2px solid rgba(117, 163, 163, 0.53);
+            border-radius: 6px;
+            background-blend-mode: hard-light;
+            background-size: cover;
+            background-position: top;
+            background-color: rgb(46, 41, 41);
+        }
+
+        .box:hover {
+            background-color: rgb(106, 102, 102);
+            background-position: center;
+            transition: all 1s ease-in-out;
+            box-shadow: 3px 3px rgb(191, 186, 186);
+            z-index: 1;
+            cursor: pointer;
+        }
+
+        .row-2 {
+            grid-row: span 2;
+
+        }
+
+        .col-2 {
+            grid-column: span 2;
+        }
+
+        @media screen and (max-width:1024px) {
+            .container {
+                flex-direction: column;
+                padding: 10px;
+                border: 4px solid red;
+            }
+
+            .box {
+
+                grid-column: span 3;
+                grid-row: span 1;
+                min-height: 200px;
+            }
+
+            .gallery {
+                width: 90%;
+                padding: 10PX;
+                border: 3px solid aqua;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text">
+            <h1>My Portfolio</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, sed dolorum eum, iure vitae voluptatem
+                recusandae quod molestias quos labore magnam totam </p>
+        </div>
+        <div class="gallery">
+            <div class="box row-2"
+                style="background-image: url(https://images.unsplash.com/photo-1433086966358-54859d0ed716?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);">
+                Water Fall</div>
+            <div class="box col-2"
+                style="background-image: url(https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG5hdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60);">
+                Greenary</div>
+            <div class="box"
+                style="background-image: url(https://images.unsplash.com/photo-1580137189272-c9379f8864fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODJ8fG5hdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);">
+                Mountains</div>
+            <div class="box row-2"
+                style="background-image: url(https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fG5hdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60);">
+                Rain</div>
+            <div class="box col-2"
+                style="background-image: url(https://images.unsplash.com/photo-1490730141103-6cac27aaab94?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fG5hdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60);">
+                Nature</div>
+
+            <div class="box"
+                style="background-image: url(https://images.unsplash.com/photo-1541675154750-0444c7d51e8e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=430&q=80);">
+                Forest</div>
+            <div class="box col-2"
+                style="background-image: url(https://images.unsplash.com/photo-1484766280341-87861644c80d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDV8fG5hdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);">
+                Sun Shine</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
